@@ -129,7 +129,7 @@ def criar_relatorio_pdf(inputs, resultados, sugestoes):
         pdf.multi_cell(0, 5, f"- {sugestao}")
         pdf.ln(2)
         
-    return pdf.output()
+    return bytes(pdf.output())
 
 # --- Interface do Aplicativo Streamlit ---
 
